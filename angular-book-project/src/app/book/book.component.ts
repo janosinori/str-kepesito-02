@@ -9,12 +9,15 @@ import { FormGroup } from '@angular/forms';
 export class BookComponent implements OnInit {
 
   bookForm: FormGroup;
+  book: Book = new Book();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  saveBook():any{}
+  saveBook():any{
+    console.log(this.book);
+  }
 
 }
