@@ -21,7 +21,7 @@ export class HttpService {
   }
 
   readABook(id, book): Observable<Book> {
-    return this.http.patch<Book>(`${this.apiUrl}/${item.id}`,item);
+    return this.http.patch<Book>(`${this.apiUrl}/${id}`,book);
   }
 
 }
