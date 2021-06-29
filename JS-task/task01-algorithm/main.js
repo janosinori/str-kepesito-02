@@ -9,7 +9,7 @@ const bookList = [
 ];
 
 function bookFilter(bookList, year, isHardCopy) {
-
+    return bookList.filter(book => book.year > year && isHardCopy);
 }
 
 export { bookFilter };
